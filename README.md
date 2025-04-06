@@ -36,14 +36,14 @@
 </div>
 
 
-
-**1)**: Veja tudo o que já foi registrado por aqui — do elogio à bronca! <br>
-**2)**: Quer saber só as sugestões, reclamações ou elogios? Aqui a gente separa tudo direitinho. <br>
-**3)**: Tem algo pra dizer? É aqui que você registra sua ideia, reclamação ou elogio. <br>
-**4)**: Curioso pra saber quantas manifestações já rolaram? Esse botão mostra o total. <br>
-**5)**: Tá procurando uma manifestação específica? Digita o código e achamos pra você! <br>
-**6)**: Se algo foi registrado errado ou precisa sair do sistema, aqui você apaga usando o código. <br>
-**7)**: Terminou? É só clicar aqui pra fechar o sistema. Até a próxima! <br>
-
+<div align="column">
+1): Veja tudo o que já foi registrado por aqui — do elogio à bronca! <br>
+2): Quer saber só as sugestões, reclamações ou elogios? Aqui a gente separa tudo direitinho. <br>
+3): Tem algo pra dizer? É aqui que você registra sua ideia, reclamação ou elogio. <br>
+4): Curioso pra saber quantas manifestações já rolaram? Esse botão mostra o total. <br>
+5): Tá procurando uma manifestação específica? Digita o código e achamos pra você! <br>
+6): Se algo foi registrado errado ou precisa sair do sistema, aqui você apaga usando o código. <br>
+7): Terminou? É só clicar aqui pra fechar o sistema. Até a próxima! <br>
+</div>
 
 
