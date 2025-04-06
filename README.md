@@ -32,7 +32,7 @@
 <h1 align="center"> Opções que serão Apresentadas:  </h1>
 
 <div align="center">
-    <img src="https://github.com/user-attachments/assets/8187fea7-f545-4b80-aae6-8d3d84d442e4" align="left" width="280px" height="200px;">
+    <img src="https://github.com/user-attachments/assets/8187fea7-f545-4b80-aae6-8d3d84d442e4" align="left" width="250px" height="200px;">
 </div>
 
 
