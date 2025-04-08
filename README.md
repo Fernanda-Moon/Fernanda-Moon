@@ -29,21 +29,120 @@
 <br>
 
 
-<h1 align="center"> Opções que serão Apresentadas:  </h1>
+<h1 align="center"> Apresentação do Código da Ouvidoria Universitária:  </h1>
 
-<div align="center">
-    <img src="https://github.com/user-attachments/assets/8187fea7-f545-4b80-aae6-8d3d84d442e4" align="left" width="300px" height="200px;">
-</div>
+<br>
+
+# 1. Conexão com Banco de Dados
+```python
+conx = criarConexao("localhost","root","12345","ouvidoriaxyz")
+```
+- Estabelece conexão com o banco de dados MySQL.
+- **Parâmetros:** servidor, usuário, senha e nome do banco.
+
+ <br>
+
+# 2. Menu Principal
+```python
+while opcao != 7:
+    print("\nMenu de opções: \n1) Listagem...")  # Menu completo
+    opcao = int(input("Digite a opção: "))
+```
+- Loop principal que mantém o sistema em execução.
+- Oferece 7 opções de interação.
+
+<br>
+
+# 3. Operações Disponíveis
+
+<br>
+
+## 🔍 Listagem de Manifestações
+```python
+consultaListagem = "select * from manifestacoes"
+descricao = listarBancoDados(conx, consultaListagem)
+```
+- Exibe todas as manifestações cadastradas
+- Mostra código, descrição, tipo, autor e ouvidor
 
 
-<div align="column">
-1): Veja tudo o que já foi registrado por aqui — do elogio à bronca! <br>
-2): Quer saber só as sugestões, reclamações ou elogios? Aqui a gente separa tudo direitinho. <br>
-3): Tem algo pra dizer? É aqui que você registra sua ideia, reclamação ou elogio. <br>
-4): Curioso pra saber quantas manifestações já rolaram? Esse botão mostra o total. <br>
-5): Tá procurando uma manifestação específica? Digita o código e achamos pra você! <br>
-6): Se algo foi registrado errado ou precisa sair do sistema, aqui você apaga usando o código. <br>
-7): Terminou? É só clicar aqui pra fechar o sistema. Até a próxima! <br>
+## 🏷️ Listagem por Tipo
+```python
+consultaListagemTipo = "select * from manifestacoes where tipo like %s"
+```
+- Filtra manifestações por tipo (Reclamação/Elogio/Sugestão)
+- Interface amigável para seleção do tipo
+
+
+## ➕ Cadastro de Nova Manifestação
+```python
+consultaInsert = "insert into manifestacoes values (%s,%s,%s,%s)"
+insertNoBancoDados(conx,consultaInsert,dados)
+```
+- **Coleta:** descrição, autor, ouvidor e tipo
+- Valida campos obrigatórios
+- Retorna código da nova manifestação
+
+
+## 🔢 Contagem de Manifestações
+```python
+consultaListagem = "select count(*) from manifestacoes"
+```
+- Exibe quantidade total de registros
+
+
+## 📄 Pesquisa por Código
+```python
+consultaPesquisa = "select * from manifestacoes where codigo = %s"
+```
+- Localiza manifestação específica
+- Exibe todos os detalhes do registro
+
+
+## ❌ Remoção de Manifestação
+```python
+consultaRemover = "delete from manifestacoes where codigo = %s"
+```
+- Remove registro permanentemente
+- Verifica existência do código antes de deletar
+
+<br>
+
+# ⚙️ Estrutura do Banco de Dados
+## A tabela manifestacoes deve conter:
+- Código (chave primária)
+- Manifestacao (texto da manifestação)
+- Autor (nome do solicitante)
+- Ouvidor (responsável pelo registro)
+- Tipo (Reclamação/Elogio/Sugestão)
+
+<br>
+
+# 🚀 Como Executar:
+1) Configure o banco de dados MySQL
+2) Instale as dependências necessárias
+3) Execute o arquivo Python principal
+4) Interaja com o sistema através do menu
+
+<br>
+
+# ⁉️Observação
+- Requer o módulo **operacoesbd.py** para operações de banco de dados!
+
+https://github.com/daniel-abella/operacoesbd/tree/main
+
+- Utilize clicando no link acima e siga os passos!
+1) Entre no link eclique em "operacoesbd.py".
+2) Vá no canto superior direito e clique na setinha de fazer dowload.
+3) Cheque se o dowload foi feito no canto superior direito.
+4) Ao clicar na pequena pastinha no arquivo baixado, você será redirecionado onde esse aqruivo ficou em sua máquina.
+5) Dando um click encima do aqruivo seguido do comando "ctrl+c", você deverá, em seguida, abrir o Pycharm.
+6) Abrindo o Pycharm em seu projeto, aperte o comando "ctrl+v" na área limpa da esquerda (onde ficam os files).
+7) Clique em "OK" e você já poderá ver esse file dentro de seu projeto, prontinho para usar!
+ 
+![ezgif com-animated-gif-maker (2)](https://github.com/user-attachments/assets/fd6690fc-c07d-4627-a9f9-263eb10a855e)
+
+
 </div>
 
 
