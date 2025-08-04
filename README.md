@@ -54,7 +54,7 @@
       <div> 
         <a href="https://www.instagram.com/fernanda_moon_travassos/profilecard/?igsh=MTg5dXJoMDc3eXhkcw==" target="_blank"><img src="https://img.shields.io/badge/-Instagram-%23E4405F?style=for-the-badge&logo=instagram&logoColor=white" target="_blank" align="center"></a>
         <a href="moonlight_chaton" target="_blank"><img src="https://img.shields.io/badge/Discord-7289DA?style=for-the-badge&logo=discord&logoColor=white" target="_blank" align="center"></a> 
-        <a href = "Fernanda Travassos <fernanda.lua.travassos@gmail.com>"><img src="https://img.shields.io/badge/-Gmail-%23333?style=for-the-badge&logo=gmail&logoColor=white" target="_blank" align="center"></a>
+        <a href = "fernanda.lua.travassos@gmail.com"><img src="https://img.shields.io/badge/-Gmail-%23333?style=for-the-badge&logo=gmail&logoColor=white" target="_blank" align="center"></a>
         <a href="" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank" align="center"></a>
 </div>
       <br>    
